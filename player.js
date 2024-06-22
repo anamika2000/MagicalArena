@@ -6,9 +6,11 @@ class Player {
         this.attack = attack;
     }
 
+    //checking health
     isAlive() {
         return this.health > 0;
     }
+    
 
     receiveDamage(damage) {
         this.health -= damage;

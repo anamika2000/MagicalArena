@@ -8,10 +8,13 @@ class Game {
         this.dice = new Dice();
     }
 
+    
     playerTurn(attacker, defender) {
+        // rolling dice
         const attackRoll = this.dice.roll();
         const defendRoll = this.dice.roll();
         
+        //calculating damage
         const attackDamage = attacker.attack * attackRoll;
         const defenseStrength = defender.strength * defendRoll;
         const damage = Math.max(0, attackDamage - defenseStrength);
@@ -28,6 +31,7 @@ class Game {
         let attacker = this.player1.health < this.player2.health ? this.player1 : this.player2;
         let defender = attacker === this.player1 ? this.player2 : this.player1;
 
+        
         while (this.player1.isAlive() && this.player2.isAlive()) {
             this.playerTurn(attacker, defender);
             
