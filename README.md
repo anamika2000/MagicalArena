@@ -1,4 +1,4 @@
-# MagicalArena
+=# MagicalArena
 
 ## Problem statement
 
@@ -21,15 +21,15 @@ This project simulates a magical arena where two players fight until one of them
     npm install
     ```
 
-## Running the Game
+## Running the Game and Unit tests
 
-To run the game:
+1. Starting the game
+
     ```bash
     npm start
     ```
 
-## To run the unit test
-
+2. Running unit tests
     ```bash
     npm test
     ```
